@@ -60,7 +60,7 @@ public class ToyRobotServiceImpl implements ToyRobotService {
     }
 
     private void validateMove(int position) {
-        if (position >= tableSize || position < 0) {
+        if (position > tableSize || position < 0) {
             throw new ToyRobotException("Invalid move");
         }
     }
